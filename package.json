@@ -1,0 +1,22 @@
+{
+  "name": "test-yandex",
+  "version": "1.0.0",
+  "description": "trying bem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julia9961/test-yandex.git"
+  },
+  "author": "julia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julia9961/test-yandex/issues"
+  },
+  "homepage": "https://github.com/julia9961/test-yandex#readme",
+  "dependencies": {
+    "sass": "^1.0.0-beta.5.2"
+  }
+}
