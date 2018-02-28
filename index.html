@@ -11,18 +11,62 @@
 
 <header class="header">
     <img class="header__logo" src="assets/logo.svg">
-    <button class="header__button button theme_light_blue">Создать встречу</button>
+    <button class="header__button button">Создать встречу</button>
 </header>
+
+
 <div class="schedule-bar">
     <div class="nav">
         <div class="nav__button button arrow_left"></div>
-        <div class="nav__label font_medium">14 дек &middot; Сегодня</div>
+        <div class="nav__label">14 дек &middot; Сегодня</div>
         <div class="nav__button button arrow_right"></div>
     </div>
 </div>
 
-<div class="conference-hall-list">
-    <div class="conference-hall-list__level grey font_bold">7 этаж</div>
+<div class="conference-list">
+    <div class="floor">
+        <div class="floor__label">7 этаж</div>
+        <div class="room booked">
+            Ржавый Фред
+            <div class="room__capacity booked">3-6 человек</div>
+        </div>
+        <div class="room available">
+            Прачечная
+            <div class="room__capacity available">до 10 человек</div>
+        </div>
+        <div class="room active">
+            Жёлтый дом
+            <div class="room__capacity available">до 10 человек</div>
+        </div>
+        <div class="room booked">
+            Оранжевый тюльпан
+            <div class="room__capacity booked">до 10 человек</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        <div class="floor__label">6 этаж</div>
+        <div class="room available">
+            Джокер
+            <div class="room__capacity available">3-6 человек</div>
+        </div>
+        <div class="room available">
+            Мариванна
+            <div class="room__capacity available">3-6 человек</div>
+        </div>
+        <div class="room available">
+            Тонкий Боб
+            <div class="room__capacity available">3-6 человек</div>
+        </div>
+        <div class="room available">
+            Черная вдова
+            <div class="room__capacity available">3-6 человек</div>
+        </div>
+        <div class="room available">
+            Белорусский ликёр
+            <div class="room__capacity available">3-6 человек</div>
+        </div>
+    </div>
 </div>
 
 <div class="timetable"></div>
