@@ -11,6 +11,9 @@ $header_button_color: #007DFF;
 $nav_button_color:#E9ECEF;
 $booked_room: #858E98;
 $active_room: #0070E0;
+$table_indent_color: #F6F7F9;
+$cell_booked_color: #D5DFE9;
+$cell_active_color: #99A9B9;
 
 
 body {
@@ -118,22 +121,51 @@ body {
     font-size: $font_size_medium;
     line-height: 17px;
   }
+
+  &_available{
+    color: black;
+  }
+
+  &_booked {
+    color: $booked_room;
+  }
+
+  &_active{
+    color: $active_room;
+  }
 }
 
-.booked {
-  color: $booked_room;
-}
-.available{
-  color: black;
-}
-.active{
-  color: $active_room;
-}
 
 .timetable {
   display: inline-block;
-  background: #F6F7F9;
 }
+
+table{
+  min-width: 500px;
+  background: $table_indent_color;
+  border-collapse: collapse;
+  margin-left:-5px;
+
+  //color_line: ##007DFF;
+}
+td {
+  width: 5%;
+  height: 28px;
+  border: 1px solid #ced6de;
+}
+
+.cell_available{
+  background: white;
+}
+.cell_booked {
+  background: $cell_booked_color;
+}
+
+.cell_active {
+  background: $cell_active_color;
+}
+
+
 
 
 
