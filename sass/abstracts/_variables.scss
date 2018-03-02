@@ -1,0 +1,24 @@
+
+$font_regular: "HelveticaNeue";
+$font_medium: "HelveticaNeue-Medium";
+$font_bold: "HelveticaNeue-Bold";
+
+$font_size_small: 11px;
+$font_size_medium: 13px;
+$font_size_large: 15px;
+
+//$header_button_color: black;
+$header_button_color: #007DFF;
+$nav_button_color: #E9ECEF;
+$booked_room: #858E98;
+$active_room: #0070E0;
+$table_indent_color: #F6F7F9;
+$cell_booked_color: #D5DFE9;
+$cell_active_color: #99A9B9;
+$add_event_button_color: #2B50FD;
+
+$breakpoints: (
+        'medium': (min-width: 800px),
+        'large': (min-width: 1000px),
+        'huge': (min-width: 1200px),
+);
