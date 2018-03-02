@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css" >
 </head>
 <body>
 
@@ -11,17 +11,17 @@
 
 <header class="header">
     <img class="header__logo" src="assets/logo.svg">
-    <button class="header__button button">Создать встречу</button>
+    <button class="header__button">Создать встречу</button>
 </header>
 
 
-<div class="schedule-bar">
+<nav class="schedule-bar">
     <div class="nav">
-        <div class="nav__button button arrow_left"></div>
+        <button class="nav__button arrow_left"></button>
         <div class="nav__label">14 дек &middot; Сегодня</div>
-        <div class="nav__button button arrow_right"></div>
+        <button class="nav__button arrow_right"></button>
     </div>
-</div>
+</nav>
 
 <div class="conference-list">
     <div class="floor">
@@ -159,6 +159,7 @@
 
             </td>
             <td>
+                <button class="add_event_button">+</button>
 
             </td>
             <td>

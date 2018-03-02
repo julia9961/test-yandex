@@ -1,0 +1,195 @@
+//@import 'abstracts/*';
+//@import 'vendors/*';
+//@import 'base/*';
+//@import 'layout/*';
+//@import 'components/*';
+//@import 'pages/*';
+//@import 'themes/*';
+
+@import 'abstracts/variables';
+
+body {
+  margin: 0 auto;
+}
+
+button {
+  font-family: $font_regular;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  letter-spacing: 0;
+}
+
+.header {
+  padding: 1.9%;
+  line-height: 36px;
+
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__button {
+    font-size: $font_size_medium;
+    width: 140px;
+    height: 36px;
+    float: right;
+    background: $header_button_color;
+    border-radius: 4px;
+    color: #FFFFFF;
+  }
+}
+
+.schedule-bar {
+  padding: 1.9%;
+  border-top: 1px solid $nav_button_color;
+  border-bottom: 1px solid $nav_button_color;
+}
+
+.nav {
+  display: inline-block;
+
+  &__label {
+    display: inline-block;
+    font-size: $font_size_large;
+    letter-spacing: 0;
+    font-family: $font_medium;
+  }
+
+  &__button {
+    background-color: $nav_button_color !important;
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+}
+
+.arrow_left {
+  background: url("../assets/arrow2.svg") no-repeat;
+  background-position: 39% 50%;
+}
+
+.arrow_right {
+  background: url("../assets/arrow.svg") no-repeat;
+  background-position: 51% 50%;
+}
+
+.conference-list {
+  display: inline-block;
+  width: 245px;
+  min-height: 658px;
+
+  padding-left: 2%;
+  padding-top: 2.9%;
+
+  border-right: 1px solid $nav_button_color;
+}
+
+.floor {
+  padding-bottom: 4%;
+  &__label {
+    padding-bottom: 1.1%;
+
+    font-size: $font_size_small;
+    letter-spacing: 0.4px;
+    font-family: $font_bold;
+    text-transform: uppercase;
+    color: $booked_room;
+  }
+}
+
+.room {
+  font-family: $font_medium;
+  font-size: $font_size_large;
+  line-height: 17px;
+
+  padding-bottom: 2.3%;
+
+  cursor: pointer;
+
+  &__capacity {
+    font-family: $font_regular;
+    font-size: $font_size_medium;
+    line-height: 17px;
+  }
+
+  &_available {
+    color: black;
+  }
+
+  &_booked {
+    color: $booked_room;
+  }
+
+  &_active {
+    color: $active_room;
+  }
+}
+
+.timetable {
+  display: inline-block;
+}
+
+table {
+  min-width: 500px;
+  background: $table_indent_color;
+  border-collapse: collapse;
+  margin-left: -5px;
+
+  //color_line: ##007DFF;
+}
+
+td {
+  width: 48px;
+  height: 28px;
+  padding: 0px;
+  border: 1px solid #ced6de;
+}
+
+.cell_available {
+  background: white;
+}
+
+.cell_booked {
+  background: $cell_booked_color;
+}
+
+.cell_active {
+  background: $cell_active_color;
+}
+
+.add_event_button {
+  background: $add_event_button_color;
+  border-radius: 3px;
+  border: 3px solid $add_event_button_color;
+  color: white;
+  width: 57px;
+  height: 28px;
+  font-family: $font_bold;
+  font-size: 19px;
+  line-height: 10px;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Medium";
+  src: url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Bold";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

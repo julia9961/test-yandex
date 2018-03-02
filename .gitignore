@@ -1,6 +1,6 @@
 .idea/
 /node_modules
-/style/style.css.map
-/style/style.css
 /css/
 /.sass-cache/
+/entrance-task-1-master/
+/sass/main.css
