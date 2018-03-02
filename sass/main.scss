@@ -1,24 +1,14 @@
-//@import 'abstracts/*';
+@import 'abstracts/*';
 //@import 'vendors/*';
-//@import 'base/*';
-//@import 'layout/*';
-//@import 'components/*';
-//@import 'pages/*';
-//@import 'themes/*';
+@import 'base/*';
+@import 'layout/*';
+@import 'components/*';
+@import 'pages/*';
+@import 'themes/*';
 
-@import 'abstracts/variables';
-@import 'abstracts/fonts';
 
 body {
   margin: 0 auto;
-}
-
-button {
-  font-family: $font_regular;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  letter-spacing: 0;
 }
 
 .header {

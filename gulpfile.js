@@ -2,9 +2,11 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
 
 gulp.task('sass', function () {
     gulp.src('sass/main.scss')
+        .pipe(sassGlob())
         .pipe(sass({
             // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
             // - or -
