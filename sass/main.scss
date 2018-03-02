@@ -7,6 +7,7 @@
 //@import 'themes/*';
 
 @import 'abstracts/variables';
+@import 'abstracts/fonts';
 
 body {
   margin: 0 auto;
@@ -171,25 +172,4 @@ td {
   font-family: $font_bold;
   font-size: 19px;
   line-height: 10px;
-}
-
-@font-face {
-  font-family: "HelveticaNeue-Medium";
-  src: url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeue-Bold";
-  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.otf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeue/HelveticaNeueCyr-Light.otf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
