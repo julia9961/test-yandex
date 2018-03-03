@@ -7,12 +7,13 @@ var sassGlob = require('gulp-sass-glob');
 gulp.task('sass', function () {
     gulp.src('sass/main.scss')
         .pipe(sassGlob())
-        .pipe(sass({
-            // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
-            // - or -
-            // includePaths: require('node-reset-scss').includePath
-            // includePaths: require('node-normalize-scss').includePaths
-        }))
+        .pipe(sass.sync().on('error', sass.logError))
+        // .pipe(sass({
+        //     // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
+        //     // - or -
+        //     // includePaths: require('node-reset-scss').includePath
+        //     // includePaths: require('node-normalize-scss').includePaths
+        // }))
         .pipe(gulp.dest('sass/'));
 });
 
