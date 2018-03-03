@@ -1,7 +1,49 @@
-button {
+.btn {
   font-family: $font_regular;
   cursor: pointer;
   border: none;
   outline: none;
   letter-spacing: 0;
+
+  &__blue{
+    font-size: $font_size_medium;
+    width: 140px;
+    height: 36px;
+    float: right;
+    background: $header_button_color;
+    border-radius: 4px;
+    color: #FFFFFF;
+  }
+
+  &__gray {
+    background-color: $nav_button_color !important;
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
+
+.add_event_button {
+  background: $add_event_button_color;
+  border-radius: 3px;
+  border: 3px solid $add_event_button_color;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  font-family: $font_bold;
+  font-size: 19px;
+  line-height: 10px;
+}
+
+.arrow_left {
+  background: url("../assets/img/arrow2.svg") no-repeat;
+  background-position: 39% 50%;
+}
+
+.arrow_right {
+  background: url("../assets/img/arrow.svg") no-repeat;
+  background-position: 51% 50%;
+}
+
