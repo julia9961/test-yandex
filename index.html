@@ -12,12 +12,61 @@
     <button class="btn btn__blue">Создать встречу</button>
 </header>
 
-<nav class="schedule-bar">
+<div class="sidebar">
     <div class="nav">
         <button class="btn btn__gray arrow_left"></button>
         <div class="nav__label">14 дек &middot; Сегодня</div>
         <button class="btn btn__gray arrow_right"></button>
     </div>
+
+    <div class="conference-list">
+        <div class="floor">
+            <div class="floor__label">7 этаж</div>
+            <div class="room room_booked">
+                Ржавый Фред
+                <div class="room__capacity room_booked">3-6 человек</div>
+            </div>
+            <div class="room room_available">
+                Прачечная
+                <div class="room__capacity room_available">до 10 человек</div>
+            </div>
+            <div class="room room_active">
+                Жёлтый дом
+                <div class="room__capacity room_available">до 10 человек</div>
+            </div>
+            <div class="room room_booked">
+                Оранжевый тюльпан
+                <div class="room__capacity room_booked">до 10 человек</div>
+            </div>
+        </div>
+
+        <div class="floor">
+            <div class="floor__label">6 этаж</div>
+            <div class="room room_available">
+                Джокер
+                <div class="room__capacity room_available">3-6 человек</div>
+            </div>
+            <div class="room room_available">
+                Мариванна
+                <div class="room__capacity room_available">3-6 человек</div>
+            </div>
+            <div class="room room_available">
+                Тонкий Боб
+                <div class="room__capacity room_available">3-6 человек</div>
+            </div>
+            <div class="room room_available">
+                Черная вдова
+                <div class="room__capacity room_available">3-6 человек</div>
+            </div>
+            <div class="room room_available">
+                Белорусский ликёр
+                <div class="room__capacity room_available">3-6 человек</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timetable">
 
     <div class="timetable-th">
         <div class="timetable-th__time">8:00</div>
@@ -38,55 +87,7 @@
         <div class="timetable-th__time">23</div>
     </div>
 
-</nav>
 
-<div class="conference-list-sidebar">
-    <div class="floor">
-        <div class="floor__label">7 этаж</div>
-        <div class="room room_booked">
-            Ржавый Фред
-            <div class="room__capacity room_booked">3-6 человек</div>
-        </div>
-        <div class="room room_available">
-            Прачечная
-            <div class="room__capacity room_available">до 10 человек</div>
-        </div>
-        <div class="room room_active">
-            Жёлтый дом
-            <div class="room__capacity room_available">до 10 человек</div>
-        </div>
-        <div class="room room_booked">
-            Оранжевый тюльпан
-            <div class="room__capacity room_booked">до 10 человек</div>
-        </div>
-    </div>
-
-    <div class="floor">
-        <div class="floor__label">6 этаж</div>
-        <div class="room room_available">
-            Джокер
-            <div class="room__capacity room_available">3-6 человек</div>
-        </div>
-        <div class="room room_available">
-            Мариванна
-            <div class="room__capacity room_available">3-6 человек</div>
-        </div>
-        <div class="room room_available">
-            Тонкий Боб
-            <div class="room__capacity room_available">3-6 человек</div>
-        </div>
-        <div class="room room_available">
-            Черная вдова
-            <div class="room__capacity room_available">3-6 человек</div>
-        </div>
-        <div class="room room_available">
-            Белорусский ликёр
-            <div class="room__capacity room_available">3-6 человек</div>
-        </div>
-    </div>
-</div>
-
-<div class="timetable">
     <table class="timetable__floor">
         <tr class="timetable__indent">
             <td></td>
