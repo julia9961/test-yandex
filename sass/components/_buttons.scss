@@ -35,19 +35,65 @@
   }
 
   &__gray {
-    @include btn_background($gray_button_color);
+    @include btn_background($gray_btn_color);
+    border-radius: 4px;
+    font-size: $font_size_medium;
+    width: 140px;
+    height: 36px;
+    float: right;
+    color: #000;
+
+    &:hover {
+      @include btn_background($gray_btn_hover_color);
+    }
+
+    &:active {
+      @include btn_background($gray_btn_active_color);
+    }
+
+    &:disabled {
+      @include btn_background($gray_btn_disabled_color);
+      cursor: auto;
+      color: rgba(0,0,0,0.20);
+    }
+  }
+
+  &__circle {
+    @include btn_background($gray_btn_color);
     border-radius: 100px;
-    background-color: $gray_button_color !important;
+    background-color: $gray_btn_color !important;
     width: 24px;
     height: 24px;
     display: inline-block;
     vertical-align: middle;
-  }
 
+    &_arrow_left {
+      background: url("../assets/img/arrow2.svg") no-repeat;
+      background-position: 39% 50%;
+      border:1px solid $gray_btn_color;
+
+      &:hover {
+        background: url("../assets/img/arrow2_hover.svg") no-repeat;
+        background-position: 39% 50%;
+      }
+    }
+
+    &_arrow_right {
+      background: url("../assets/img/arrow.svg") no-repeat;
+      background-position: 51% 50%;
+      border:1px solid $gray_btn_color;
+
+      &:hover {
+        background: url("../assets/img/arrow_hover.svg") no-repeat;
+        background-position: 51% 50%;
+      }
+
+    }
+  }
 }
 
 .free_slot_btn {
-  @include btn_background(#FFFFFF);
+  //@include btn_background(#FFFFFF);
   border-radius: 2px;
   width: 100%;
   font-family: $font_family_bold;
@@ -71,7 +117,7 @@
   @include btn_background($booked_slot_btn_color);
   width: 100%;
   height: 100%;
-  margin-top: 2px;
+  padding-bottom: 3px;
 
   &:hover {
     @include btn_background($booked_slot_btn_hover_color);
@@ -80,14 +126,4 @@
   &:active {
     @include btn_background($booked_slot_btn_active_color);
   }
-}
-
-.arrow_left {
-  background: url("../assets/img/arrow2.svg") no-repeat;
-  background-position: 39% 50%;
-}
-
-.arrow_right {
-  background: url("../assets/img/arrow.svg") no-repeat;
-  background-position: 51% 50%;
 }

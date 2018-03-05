@@ -8,10 +8,13 @@ $font_size_large: 15px;
 
 $blue_btn_color: #007DFF;
 $blue_btn_hover_color: #0059FF;
-$blue_btn_active_color: rgba(11,0,255,0.80);
+$blue_btn_active_color: #0B00FF;
 $blue_btn_disabled_color: #E9ECEF;
 
-$gray_button_color: #E9ECEF;
+$gray_btn_color: #f2f3f4;
+$gray_btn_hover_color: #E9ECEF;
+$gray_btn_active_color: #dcdfe3;
+$gray_btn_disabled_color: #E2E5E8;
 
 $booked_room: #858E98;
 $active_room: #0070E0;
@@ -23,14 +26,11 @@ $booked_slot_btn_color: #D5DFE9;
 $booked_slot_btn_hover_color: #98A9B9;
 $booked_slot_btn_active_color: #8594A2;
 
-
-
 $breakpoints: (
         'medium': (min-width: 800px),
         'large': (min-width: 1000px),
         'huge': (min-width: 1200px),
 );
 
-
-
 $line_height_nav: 45px;
+$page_padding_left: 20px;
