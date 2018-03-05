@@ -30,6 +30,7 @@ body {
   border-bottom: 1px solid $gray_btn_color;
   line-height: $line_height_nav;
   padding-left: $page_padding_left;
+  padding-right: $page_padding_left;
 
   &__label {
     display: inline-block;
@@ -41,6 +42,7 @@ body {
 
 .conference-list {
   padding-left: $page_padding_left;
+  padding-right: $page_padding_left;
   border-right: 1px solid $gray_btn_color;
 }
 
@@ -48,25 +50,21 @@ body {
   padding-top: 20px;
   &__label {
     padding-bottom: 7px;
-
     font-size: $font_size_small;
     letter-spacing: 0.4px;
     font-family: $font_family_bold;
     text-transform: uppercase;
-    color: $booked_room;
+    color: $gray_text_color;
   }
 }
 
-.room {
+.conference-room {
   font-family: $font_family_medium;
   font-size: $font_size_large;
   line-height: 17px;
   cursor: pointer;
   padding-bottom: 21px;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
+  color: #000000;
 
   &__capacity {
     font-family: $font_family_regular;
@@ -74,17 +72,21 @@ body {
     line-height: 17px;
   }
 
-  &_available {
-    color: black;
+  &__name:hover {
+    color: $conference_room_name_hover_color;
+  }
+  &__name:active {
+    color: $conference_room_name_active_color;
   }
 
-  &_booked {
-    color: $booked_room;
+  &:last-child {
+    padding-bottom: 0;
   }
+}
 
-  &_active {
-    color: $active_room;
-  }
+.disabled {
+  pointer-events: none;
+  color: $gray_text_color;
 }
 
 .timetable {
@@ -98,10 +100,10 @@ table {
   background: #FFFFFF;
 }
 
-tr.timetable__indent  {
+tr.timetable__indent {
   background: $table_indent_color;
 
-  &:last-child{
+  &:last-child {
     height: 100px;
   }
 }
@@ -124,12 +126,10 @@ td {
   line-height: $line_height_nav;
   border-bottom: 1px solid $gray_btn_color;
 
-
   &__time {
     font-family: $font_family_bold;
     font-size: 11px;
     color: #252525;
     letter-spacing: 0.4px;
   }
-
 }

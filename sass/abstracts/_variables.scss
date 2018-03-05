@@ -16,8 +16,7 @@ $gray_btn_hover_color: #E9ECEF;
 $gray_btn_active_color: #dcdfe3;
 $gray_btn_disabled_color: #E2E5E8;
 
-$booked_room: #858E98;
-$active_room: #0070E0;
+$gray_text_color: #858E98;
 $table_indent_color: #F6F7F9;
 
 $free_slot_btn_hover_color: #1D54FE;
@@ -25,6 +24,9 @@ $free_slot_btn_active_color: #1D00FE;
 $booked_slot_btn_color: #D5DFE9;
 $booked_slot_btn_hover_color: #98A9B9;
 $booked_slot_btn_active_color: #8594A2;
+
+$conference_room_name_hover_color:#0070E0;
+$conference_room_name_active_color:$free_slot_btn_hover_color;
 
 $breakpoints: (
         'medium': (min-width: 800px),
