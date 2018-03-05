@@ -1,40 +1,85 @@
+@mixin btn_background($color) {
+  border: 1px solid $color;
+  background: $color;
+}
+
 .btn {
-  font-family: $font_regular;
+  @include btn_background(#FFFFFF);
+  font-family: $font_family_medium;
   cursor: pointer;
-  border: none;
   outline: none;
   letter-spacing: 0;
+  color: #FFFFFF;
 
-  &__blue{
+  &__blue {
+    @include btn_background($blue_btn_color);
+    border-radius: 4px;
     font-size: $font_size_medium;
     width: 140px;
     height: 36px;
     float: right;
-    background: $header_button_color;
-    border-radius: 4px;
-    color: #FFFFFF;
+
+    &:hover {
+      @include btn_background($blue_btn_hover_color);
+    }
+
+    &:active {
+      @include btn_background($blue_btn_active_color);
+    }
+
+    &:disabled {
+      @include btn_background($blue_btn_disabled_color);
+      cursor: auto;
+      color: rgba(0, 0, 0, 0.20);
+    }
   }
 
   &__gray {
-    background-color: $nav_button_color !important;
+    @include btn_background($gray_button_color);
     border-radius: 100px;
+    background-color: $gray_button_color !important;
     width: 24px;
     height: 24px;
     display: inline-block;
     vertical-align: middle;
   }
+
 }
 
-.add_event_button {
-  background: $add_event_button_color;
-  border-radius: 3px;
-  border: 3px solid $add_event_button_color;
-  color: #FFFFFF;
+.free_slot_btn {
+  @include btn_background(#FFFFFF);
+  border-radius: 2px;
+  width: 100%;
+  font-family: $font_family_bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  &:before {
+    content: "+";
+  }
+
+  &:hover {
+    @include btn_background($free_slot_btn_hover_color);
+  }
+
+  &:active {
+    @include btn_background($free_slot_btn_active_color);
+  }
+}
+
+.booked_slot_btn {
+  @include btn_background($booked_slot_btn_color);
   width: 100%;
   height: 100%;
-  font-family: $font_bold;
-  font-size: 19px;
-  line-height: 10px;
+  margin-top: 2px;
+
+  &:hover {
+    @include btn_background($booked_slot_btn_hover_color);
+  }
+
+  &:active {
+    @include btn_background($booked_slot_btn_active_color);
+  }
 }
 
 .arrow_left {
@@ -46,4 +91,3 @@
   background: url("../assets/img/arrow.svg") no-repeat;
   background-position: 51% 50%;
 }
-

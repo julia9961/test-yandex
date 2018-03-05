@@ -14,7 +14,7 @@ body {
 .header {
   padding: 20px;
   line-height: 36px;
-  border-bottom: 1px solid $nav_button_color;
+  border-bottom: 1px solid $gray_button_color;
 
 
   &__logo {
@@ -30,14 +30,14 @@ body {
 
 .nav {
   display: inline-block;
-  border-bottom: 1px solid $nav_button_color;
+  border-bottom: 1px solid $gray_button_color;
   line-height: $line_height_nav;
 
   &__label {
     display: inline-block;
     font-size: $font_size_large;
     letter-spacing: 0;
-    font-family: $font_medium;
+    font-family: $font_family_medium;
   }
 }
 
@@ -46,7 +46,7 @@ body {
   display: inline-block;
   width: 245px;
   min-height: 658px;
-  border-right: 1px solid $nav_button_color;
+  border-right: 1px solid $gray_button_color;
 }
 
 .floor {
@@ -56,14 +56,14 @@ body {
 
     font-size: $font_size_small;
     letter-spacing: 0.4px;
-    font-family: $font_bold;
+    font-family: $font_family_bold;
     text-transform: uppercase;
     color: $booked_room;
   }
 }
 
 .room {
-  font-family: $font_medium;
+  font-family: $font_family_medium;
   font-size: $font_size_large;
   line-height: 17px;
   cursor: pointer;
@@ -74,7 +74,7 @@ body {
   }
 
   &__capacity {
-    font-family: $font_regular;
+    font-family: $font_family_regular;
     font-size: $font_size_medium;
     line-height: 17px;
   }
@@ -119,27 +119,19 @@ td {
   width: 48px;
   height: 27px;
   padding: 0;
-  border-right: 1px solid $nav_button_color;
-  border-bottom: 1px solid $nav_button_color;
-}
-
-.cell_booked {
-  background: $cell_booked_color;
-  &:hover {
-    background: $cell_hover_color;
-    cursor: pointer;
-  }
+  border-right: 1px solid $gray_button_color;
+  border-bottom: 1px solid $gray_button_color;
 }
 
 .timetable-th {
   display: flex;
   justify-content: space-around;
   line-height: $line_height_nav;
-  border-bottom: 1px solid $nav_button_color;
+  border-bottom: 1px solid $gray_button_color;
 
 
   &__time {
-    font-family: $font_bold;
+    font-family: $font_family_bold;
     font-size: 11px;
     color: #252525;
     letter-spacing: 0.4px;
