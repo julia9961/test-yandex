@@ -47,14 +47,13 @@ body {
 }
 
 .floor {
-  padding-top: 20px;
   &__label {
-    padding-bottom: 7px;
     font-size: $font_size_small;
     letter-spacing: 0.4px;
     font-family: $font_family_bold;
     text-transform: uppercase;
     color: $gray_text_color;
+    line-height: $line_height_floor_label;
   }
 }
 
@@ -86,7 +85,7 @@ body {
 
 .disabled {
   pointer-events: none;
-  color: $gray_text_color;
+  color: $gray_text_color !important;
 }
 
 .timetable {
@@ -107,13 +106,19 @@ tr.timetable__indent {
     height: 100px;
   }
 }
+th {
+  height: 43px;
+}
 
 tr:nth-child(1) {
-  height: 40px;
+  height: $line_height_floor_label;
+}
+td:nth-child(1) {
+  width: 28px;
 }
 
 td {
-  width: 48px;
+  width: 56px;
   height: 27px;
   padding: 0;
   border-right: 1px solid $gray_btn_color;
@@ -121,15 +126,7 @@ td {
 }
 
 .timetable-th {
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
   line-height: $line_height_nav;
   border-bottom: 1px solid $gray_btn_color;
-
-  &__time {
-    font-family: $font_family_bold;
-    font-size: 11px;
-    color: #252525;
-    letter-spacing: 0.4px;
-  }
 }

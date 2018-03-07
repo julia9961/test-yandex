@@ -4,7 +4,6 @@
   cursor: pointer;
   outline: none;
   letter-spacing: 0;
-  color: #FFFFFF;
 
   &__blue {
     @include btn_background($blue_btn_color);
@@ -13,6 +12,7 @@
     width: 140px;
     height: 36px;
     float: right;
+    color: #FFFFFF;
 
     &:hover {
       @include btn_background($blue_btn_hover_color);
@@ -63,26 +63,43 @@
     vertical-align: middle;
 
     &_arrow_left {
-      background: url("../assets/img/arrow2.svg") no-repeat;
+      background: url("../assets/img/arrow.svg") no-repeat;
       background-position: 39% 50%;
       border:1px solid $gray_btn_color;
 
       &:hover {
-        background: url("../assets/img/arrow2_hover.svg") no-repeat;
-        background-position: 39% 50%;
+        background: url("../assets/img/arrow_hover.svg") no-repeat;
+        background-position: 44% 63%;
       }
     }
 
     &_arrow_right {
       background: url("../assets/img/arrow.svg") no-repeat;
-      background-position: 51% 50%;
+      background-position: 45% 50%;
+      transform: scale(-1,1);
       border:1px solid $gray_btn_color;
 
       &:hover {
         background: url("../assets/img/arrow_hover.svg") no-repeat;
-        background-position: 51% 50%;
+        transform: scale(-1,1);
+        background-position: 52% 63%;
       }
+    }
+  }
 
+  &__time {
+    height: 20px;
+    font-family: $font_family_bold;
+    font-size: 11px;
+    color: #252525;
+    letter-spacing: 0.4px;
+    padding-right: 8px;
+    padding-left: 8px;
+
+    &:hover {
+      background: $blue_btn_color;
+      border-radius: 100px;
+      color: #FFFFFF;
     }
   }
 }
@@ -93,6 +110,7 @@
   font-family: $font_family_bold;
   font-size: 18px;
   line-height: 23px;
+  color: #FFFFFF;
 
   &:before {
     content: "+";

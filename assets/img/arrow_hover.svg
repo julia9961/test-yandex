@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px" viewBox="0 0 9 14" version="1.1">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g xmlns="http://www.w3.org/2000/svg" id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">     
+        <g xmlns="http://www.w3.org/2000/svg" id="главная" transform="translate(-31.000000, -88.000000)" stroke="#000000" stroke-width="2">
+            <g id="Дата" transform="translate(24.000000, 82.000000)">
+                <g id="arrow2" transform="translate(8.000000, 7.000000)">
+                    <polyline id="Rectangle-4" transform="translate(5.000000, 5.000000) rotate(-315.000000) translate(-5.000000, -5.000000) " points="8 8 2 8 2 2 2 2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
