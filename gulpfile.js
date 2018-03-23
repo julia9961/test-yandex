@@ -1,22 +1,6 @@
-'use strict';
+const gulp        = require('gulp');
+const requireDir  = require('require-dir');
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sassGlob = require('gulp-sass-glob');
+requireDir('./gulp/tasks', {recurse: false});
 
-gulp.task('sass', function () {
-    gulp.src('sass/main.scss')
-        .pipe(sassGlob())
-        .pipe(sass.sync().on('error', sass.logError))
-        // .pipe(sass({
-        //     // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
-        //     // - or -
-        //     // includePaths: require('node-reset-scss').includePath
-        //     // includePaths: require('node-normalize-scss').includePaths
-        // }))
-        .pipe(gulp.dest('sass/'));
-});
-
-gulp.task('sass:watch', function () {
-    gulp.watch('sass/main.scss', ['sass']);
-});
+gulp.task('default', ['watch']);
