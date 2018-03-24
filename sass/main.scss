@@ -25,21 +25,6 @@ body {
   display: inline-block;
 }
 
-.nav {
-  display: inline-block;
-  border-bottom: 1px solid $gray_btn_color;
-  line-height: $line_height_nav;
-  padding-left: $page_padding_left;
-  padding-right: $page_padding_left;
-
-  &__label {
-    display: inline-block;
-    font-size: $font_size_large;
-    letter-spacing: 0;
-    font-family: $font_family_medium;
-  }
-}
-
 .conference-list {
   padding-left: $page_padding_left;
   padding-right: $page_padding_left;
