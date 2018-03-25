@@ -37,24 +37,24 @@ li a {
   }
 
   &__previous {
-    background: url("../assets/img/arrow.svg") no-repeat;
+    background: url($src_url + "/assets/img/arrow.svg") no-repeat;
     background-position: 39% 50%;
     border: 1px solid $gray_btn_color;
 
     &:hover {
-      background: url("../assets/img/arrow_hover.svg") no-repeat;
+      background: url($src_url + "/assets/img/arrow_hover.svg") no-repeat;
       background-position: 44% 63%;
     }
   }
 
   &__next {
-    background: url("../assets/img/arrow.svg") no-repeat;
+    background: url($src_url + "/assets/img/arrow.svg") no-repeat;
     background-position: 45% 50%;
     transform: scale(-1, 1);
     border: 1px solid $gray_btn_color;
 
     &:hover {
-      background: url("../assets/img/arrow_hover.svg") no-repeat;
+      background: url($src_url + "/assets/img/arrow_hover.svg") no-repeat;
       transform: scale(-1, 1);
       background-position: 52% 63%;
     }

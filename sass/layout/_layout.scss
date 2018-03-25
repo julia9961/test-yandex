@@ -1,0 +1,15 @@
+.layout {
+  &__header {
+
+  }
+  &__left {
+    float: left;
+    width: $sidebar_width;
+  }
+  &__content {
+    margin-left: $sidebar_width;
+  }
+  &__clear {
+    clear: both;
+  }
+}

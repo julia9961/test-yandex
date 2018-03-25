@@ -3,376 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <title>Test-yandex</title>
-    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="dist/css/main.css" >
 </head>
 <body>
 
-<header class="header">
-    <img class="header__logo" src="assets/img/logo.svg">
-    <button class="btn btn__blue">Создать встречу</button>
-</header>
-
-<div class="sidebar">
-    <div class="nav">
-        <ul>
-            <li><a href="#" class="nav__previous"></a></li>
-            <li class="nav__label">14 дек &middot; Сегодня</li>
-            <li><a href="#" class="nav__next"></a></li>
-        </ul>
+<div class="layout">
+    <div class="layout__header">
+        <header class="header">
+            <img class="header__logo" src="assets/img/logo.svg">
+            <button class="btn btn__blue">Создать встречу</button>
+        </header>
     </div>
-
-    <div class="conference-list">
-        <div class="floor">
-
-            <div class="floor__label">7 этаж</div>
-
-            <div class="conference-room disabled">
-                <div class="conference-room__name">Ржавый Фред</div>
-                <div class="conference-room__capacity">3-6 человек</div>
-            </div>
-
-            <div class="conference-room">
-                <div class="conference-room__name">Прачечная</div>
-                <div class="conference-room__capacity">до 10 человек</div>
-            </div>
-
-            <div class="conference-room">
-                <div class="conference-room__name">Жёлтый дом</div>
-                <div class="conference-room__capacity">до 10 человек</div>
-            </div>
-
-            <div class="conference-room disabled">
-                <div class="conference-room__name">Оранжевый тюльпан</div>
-                <div class="conference-room__capacity">до 10 человек</div>
-            </div>
-
+    <div class="layout__left">
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="nav__previous"></a></li>
+                <li class="nav__label">14 дек &middot; Сегодня</li>
+                <li><a href="#" class="nav__next"></a></li>
+            </ul>
         </div>
 
-        <div class="floor">
-            <div class="floor__label">6 этаж</div>
+        <div class="conference-list">
+            <div class="floor">
 
-            <div class="conference-room">
-                <div class="conference-room__name">Джокер</div>
-                <div class="conference-room__capacity">3-6 человек</div>
+                <div class="floor__label">7 этаж</div>
+
+                <div class="conference-room disabled">
+                    <div class="conference-room__name">Ржавый Фред</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
+
+                <div class="conference-room">
+                    <div class="conference-room__name">Прачечная</div>
+                    <div class="conference-room__capacity">до 10 человек</div>
+                </div>
+
+                <div class="conference-room">
+                    <div class="conference-room__name">Жёлтый дом</div>
+                    <div class="conference-room__capacity">до 10 человек</div>
+                </div>
+
+                <div class="conference-room disabled">
+                    <div class="conference-room__name">Оранжевый тюльпан</div>
+                    <div class="conference-room__capacity">до 10 человек</div>
+                </div>
+
             </div>
 
-            <div class="conference-room">
-                <div class="conference-room__name">Мариванна</div>
-                <div class="conference-room__capacity">3-6 человек</div>
-            </div>
+            <div class="floor">
+                <div class="floor__label">6 этаж</div>
 
-            <div class="conference-room">
-                <div class="conference-room__name">Тонкий Боб</div>
-                <div class="conference-room__capacity">3-6 человек</div>
-            </div>
+                <div class="conference-room">
+                    <div class="conference-room__name">Джокер</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
 
-            <div class="conference-room">
-                <div class="conference-room__name">Черная вдова</div>
-                <div class="conference-room__capacity">3-6 человек</div>
-            </div>
+                <div class="conference-room">
+                    <div class="conference-room__name">Мариванна</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
 
-            <div class="conference-room">
-                <div class="conference-room__name">Белорусский ликёр</div>
-                <div class="conference-room__capacity">3-6 человек</div>
-            </div>
+                <div class="conference-room">
+                    <div class="conference-room__name">Тонкий Боб</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
 
+                <div class="conference-room">
+                    <div class="conference-room__name">Черная вдова</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
+
+                <div class="conference-room">
+                    <div class="conference-room__name">Белорусский ликёр</div>
+                    <div class="conference-room__capacity">3-6 человек</div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
+    <div class="layout__content">
+        <div class="timetable">
+            <table>
+                <tr>
+                    <th><button class="btn btn__time disabled">8:00</button></th>
+                    <th><button class="btn btn__time disabled">9</button></th>
+                    <th><button class="btn btn__time disabled">10</button></th>
+                    <th><button class="btn btn__time">11:05</button></th>
+                    <th><button class="btn btn__time">12</button></th>
+                    <th><button class="btn btn__time">13</button></th>
+                    <th><button class="btn btn__time">14</button></th>
+                    <th><button class="btn btn__time">15</button></th>
+                    <th><button class="btn btn__time">16</button></th>
+                    <th><button class="btn btn__time">17</button></th>
+                    <th><button class="btn btn__time">18</button></th>
+                    <th><button class="btn btn__time">19</button></th>
+                    <th><button class="btn btn__time">20</button></th>
+                    <th><button class="btn btn__time">21</button></th>
+                    <th><button class="btn btn__time">22</button></th>
+                    <th><button class="btn btn__time">23</button></th>
 
-<div class="timetable">
-    <table>
-        <tr>
-        <th><button class="btn btn__time disabled">8:00</button></th>
-        <th><button class="btn btn__time disabled">9</button></th>
-        <th><button class="btn btn__time disabled">10</button></th>
-        <th><button class="btn btn__time">11:05</button></th>
-        <th><button class="btn btn__time">12</button></th>
-        <th><button class="btn btn__time">13</button></th>
-        <th><button class="btn btn__time">14</button></th>
-        <th><button class="btn btn__time">15</button></th>
-        <th><button class="btn btn__time">16</button></th>
-        <th><button class="btn btn__time">17</button></th>
-        <th><button class="btn btn__time">18</button></th>
-        <th><button class="btn btn__time">19</button></th>
-        <th><button class="btn btn__time">20</button></th>
-        <th><button class="btn btn__time">21</button></th>
-        <th><button class="btn btn__time">22</button></th>
-        <th><button class="btn btn__time">23</button></th>
+                </tr>
+            </table>
 
-        </tr>
-    </table>
+            <table class="timetable__floor">
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-    <table class="timetable__floor">
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+            </table>
 
-    </table>
+            <table class="timetable__floor">
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-    <table class="timetable__floor">
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-        </tr>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                <tr>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__booked_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                    <td><button class="btn btn__free_slot"></button></td>
+                </tr>
 
-        <tr>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__booked_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-            <td><button class="btn btn__free_slot"></button></td>
-        </tr>
-
-        <tr class="timetable__indent">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+                <tr class="timetable__indent">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="layout__clear"></div>
 </div>
 
 </body>

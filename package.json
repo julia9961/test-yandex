@@ -21,9 +21,11 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "node-normalize-scss": "^3.0.0",
-    "node-reset-scss": "^1.0.1"
+    "node-reset-scss": "^1.0.1",
+    "require-dir": "^1.0.0"
   }
 }

@@ -21,9 +21,6 @@ body {
   }
 }
 
-.sidebar {
-  display: inline-block;
-}
 
 .conference-list {
   padding-left: $page_padding_left;
@@ -75,13 +72,14 @@ body {
 
 .timetable {
   display: inline-block;
-  position: absolute;
+  width: 100%;
 }
 
 table {
-  min-width: 500px;
+  width: 100%;
   border-collapse: collapse;
   background: #FFFFFF;
+
 }
 
 tr.timetable__indent {

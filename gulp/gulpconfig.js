@@ -1,15 +1,17 @@
 const src = '.';
-const dest = '.';
+const dest = './dist';
 
 module.exports = {
     path: {
         src: {
             base: src,
-            sass: src + '/sass'
+            sass: src + '/sass',
+            views: src + '/views'
         },
         dest: {
             base: dest,
-            css: dest + '/css'
+            css: dest + '/css',
+            views: dest + '/views'
         }
     }
 };
